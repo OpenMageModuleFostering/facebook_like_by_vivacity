@@ -23,12 +23,14 @@ if($fbface==1){
 $fbappid=($fbappid=='')	?	'512993528731249' : $fbappid	;//If FB APP ID is not added
 $dbdatawidth=($dbdatawidth=='')	?	'450' : $dbdatawidth	;//default button width
 ?>
+<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=<?php echo $fbappid;?>";
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=<?php echo $fbappid;?>&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like layout="<?php echo $fblayout; ?>" show_faces="<?php echo $fbface; ?>"   width="<?php echo $dbdatawidth;?>" color_scheme="<?php echo $fbcolorscheme;?>" ></fb:like>
+}(document, 'script', 'facebook-jssdk'));</script>
+<?php /* ?><fb:like layout="<?php echo $fblayout; ?>" show_faces="<?php echo $fbface; ?>"   width="<?php echo $dbdatawidth;?>" color_scheme="<?php echo $fbcolorscheme;?>" ></fb:like> <?php */ ?>
+
+<div class="fb-like" data-width="<?php echo $dbdatawidth;?>" data-layout="<?php echo $fblayout; ?>" data-action="like" data-show-faces="<?php echo $fbface; ?>"></div>

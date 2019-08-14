@@ -5,6 +5,7 @@
 <meta property="og:url" content="<?php echo $this->helper('core/url')->getCurrentUrl();?>"/>
 <meta property="og:type" content="product"/>
 <meta property="og:image" content="<?php echo $this->helper('catalog/image')->init($product, 'small_image')->resize(130, 110); ?>" />
-<?php endif; ?> 
+<meta property="og:description" content="<?php echo $product->getShortDescription(); ?>" />
+<?php endif; ?>
 
 
