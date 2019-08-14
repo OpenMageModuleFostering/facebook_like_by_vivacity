@@ -11,10 +11,7 @@ $fblocale		= 	Mage::app()->getLocale()->getLocaleCode();
 
 $dbdatawidth	=	Mage::getStoreConfig('facebooklike_options/all_settings/datawidth');
 
-$fblike	=	Mage::getStoreConfig('facebooklike_options/all_settings/fblike');
-
-$fbsend	=	Mage::getStoreConfig('facebooklike_options/all_settings/fbsend');
-
+$fbcomments	=	Mage::getStoreConfig('facebooklike_options/all_settings/fbcomments');
 
 if($fbface==1){
 
@@ -38,9 +35,6 @@ $dbdatawidth=($dbdatawidth=='')	?	'450' : $dbdatawidth	;//default button width
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <?php /* ?><fb:like layout="<?php echo $fblayout; ?>" show_faces="<?php echo $fbface; ?>"   width="<?php echo $dbdatawidth;?>" color_scheme="<?php echo $fbcolorscheme;?>" ></fb:like> <?php */ ?>
-<?php if($fblike) { ?>
-<div class="fb-like" data-width="<?php echo $dbdatawidth;?>" data-layout="<?php echo $fblayout; ?>" data-action="like" data-show-faces="<?php echo $fbface; ?>"></div>
-<?php } ?>
-<?php if($fbsend) { ?>
-<div class="fb-send" data-href="<?php echo $currentUrl; ?>" data-layout="button_count"></div>
+<?php if($fbcomments) { ?>
+<div class="fb-comments" data-href="<?php echo $currentUrl; ?>"  data-numposts="5"></div>
 <?php } ?>
