@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Facebook_Like_by_Vivacity</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.gnu.org/copyleft/gpl.html">GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Adds "Facebook Like button" to your product detail page. </summary>
+    <description> "Facebook Like Vivacity" extension provides users an easy &amp; simple way to like any of your store products which then is posted on user's Facebook account wall, thus telling your friends and FaceBook connections about that product and its description. </description>
+    <notes>Initial Release of Extension</notes>
+    <authors><author><name>Team Vivacity</name><user>vivacityinfotec</user><email>vivacityinfotech.jaipur@gmail.com</email></author></authors>
+    <date>2014-05-07</date>
+    <time>06:41:43</time>
+    <contents><target name="magecommunity"><dir name="Vivacity"><dir name="FacebookLike"><dir name="Helper"><file name="Data.php" hash="ab7954778cebab04b849b2a7d2a26e8b"/></dir><dir name="Model"><file name="Fbcolorscheme.php" hash="6ca3976387c8c63c7f4a2bfa3bb91b25"/><file name="Layout.php" hash="ef6f038a3654e0238b19770327ec74f7"/></dir><dir name="etc"><file name="config.xml" hash="b27f6850d8b342570dcad233503b167b"/><file name="system.xml" hash="37c59acecb5c71584a58b1e527590d9f"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Vivacity_FacebookLike.xml" hash="e8869ea63f7c6305de39a294deef443a"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="facebooklike"><file name="facebooklike.phtml" hash="f639bbf6eacccb90ac1315a7ba5253ef"/><file name="head.phtml" hash="c200db758cc264bcf050f4b3b65906c2"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
