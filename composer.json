@@ -1,16 +1,5 @@
 {
-    "name": "OpenMageModuleFostering/Facebook_Like_by_Vivacity",
-    "type": "magento-module",
-    "license": "GPL",
-    "homepage": "",
-    "description": "Adds "Facebook Like button" to your product detail page. ",
-    "authors": [
-    {
-        "name": "Team Vivacity",
-        "email": "vivacityinfotech.jaipur@gmail.com"
-    }
-],
-    "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+    "keywords": [
+        "openmage-module"
+    ]
 }
